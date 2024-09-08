@@ -9,10 +9,10 @@ build:
 
 python:
   install:
-    - requirements: /doc/requirements_docs.txt
+    - requirements: doc/requirements_docs.txt
 
 sphinx:
-  configuration: /doc/conf.py
+  configuration: doc/conf.py
 
 formats:
   - epub
