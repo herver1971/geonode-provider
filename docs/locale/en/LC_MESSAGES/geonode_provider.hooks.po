@@ -1,0 +1,366 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Kan Territory & IT
+# This file is distributed under the same license as the Geonode Provider
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Geonode Provider \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-08 18:15-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.1\n"
+
+#: ../../geonode_provider.hooks.rst:2
+msgid "geonode\\_provider.hooks package"
+msgstr ""
+
+#: ../../geonode_provider.hooks.rst:5
+msgid "Submodules"
+msgstr ""
+
+#: ../../geonode_provider.hooks.rst:8
+msgid "geonode\\_provider.hooks.geonode module"
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook:1 of
+msgid "Bases: :py:class:`~airflow.hooks.base.BaseHook`"
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook:1 of
+msgid "Airflow hook to interact with GeoNode. Methods list:"
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook:4 of
+msgid ""
+"import_layer: runs the \"importlayers\" command in the GeoNode container "
+"to upload the datasets contents in a specific directory/folder to "
+"GeoServer."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook:5 of
+msgid "publish_layer: publishes a layer uploaded to the database in GeoServer."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook:6 of
+msgid ""
+"update_layer: runs the \"updatelayers\" command in the GeoNode container "
+"so that the layer already uploaded, published and recognized by "
+"GeoServer, is now visible in GeoNode."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook:7 of
+msgid ""
+"upload_dataset: uploads a layer in *.zip*, \".shp\", \"dbf\", \"shx\", "
+"\"prj\" or \".tif\" format to GeoNode via API v2."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook:8 of
+msgid "upload_style: uploads a style in \".sld\" format to GeoServer."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook:9 of
+msgid "update_style: update an existing style."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook:10 of
+msgid "update_layer_style: assigns an already uploaded style to a layer."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook:11 of
+msgid "upload_map: creates a map in GeoNode via API v2 from a set of datasets."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook:12 of
+msgid "upload_document: uploads a document to GeoNode via API v2."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook:13 of
+msgid ""
+"upload_metadata: uploads/sets metadata for a given type of resource (for "
+"the moment title and supplementary information)."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook:14 of
+msgid "set_permiss: sets permissions for a given resource."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook:15 of
+msgid ""
+"get_execution_information: gets information/metadata about a performed "
+"execution."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.import_layer:1 of
+msgid ""
+"This method allows to update datasets to GeoServer by passing datasets "
+"directory. Just works with directories, not with single files. The method"
+" uses an SSH connection to execute a Docker command within GeoNode's "
+"container."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.import_layer
+#: geonode_provider.hooks.geonode.GeoNodeHook.publish_layer
+#: geonode_provider.hooks.geonode.GeoNodeHook.set_permiss
+#: geonode_provider.hooks.geonode.GeoNodeHook.update_layer
+#: geonode_provider.hooks.geonode.GeoNodeHook.update_layer_style
+#: geonode_provider.hooks.geonode.GeoNodeHook.update_style
+#: geonode_provider.hooks.geonode.GeoNodeHook.upload_dataset
+#: geonode_provider.hooks.geonode.GeoNodeHook.upload_document
+#: geonode_provider.hooks.geonode.GeoNodeHook.upload_map
+#: geonode_provider.hooks.geonode.GeoNodeHook.upload_metadata
+#: geonode_provider.hooks.geonode.GeoNodeHook.upload_style of
+msgid "Parameters"
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.import_layer:4 of
+msgid "Path to datasets directory/folder."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.publish_layer:1 of
+msgid ""
+"This method is utilized to publish a layer to GeoServer by utilizing an "
+"API 'POST' request."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.publish_layer:3 of
+msgid ""
+"The dataset name (not title) that must be published. Is possible to pass "
+"a list of datasets names to execute this method recursively."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.set_permiss:1 of
+msgid ""
+"The `set_permiss` method is responsible for setting permissions for a "
+"specified resource. It targets the permissions API v2 endpoint and uses a"
+" 'PATCH' request to update the permissions based on the provided "
+"`permiss_data`."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.set_permiss:4 of
+msgid "ID of the resource whose permiss want to update."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.set_permiss:5 of
+msgid "JSON/dict object with desired permission settings."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.set_permiss:7 of
+msgid "Example JSON: .. code-block:: json"
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.set_permiss:34 of
+msgid "{"
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.set_permiss:11 of
+msgid ""
+"\"users\": [ { \"id\": <user_id>, \"permissions\": \"none\" }, { \"id\": "
+"<user_id>, \"permissions\": \"view\" }, { \"id\": <user_id>, "
+"\"permissions\": \"download\" }, { \"id\": <user_id>, \"permissions\": "
+"\"edit\" }, { \"id\": <user_id>, \"permissions\": \"manage\" }, { \"id\":"
+" <user_id>, \"permissions\": \"owner\" }"
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.set_permiss:44
+#: geonode_provider.hooks.geonode.GeoNodeHook.set_permiss:51 of
+msgid "],"
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.set_permiss:37 of
+msgid ""
+"\"groups\": [ { \"id\": <group_id>, \"permissions\": \"none\" }, { "
+"\"id\": <group_id>, \"permissions\": \"none\" }"
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.set_permiss:47 of
+msgid ""
+"\"organizations\": [ { \"id\": <organization_id>, \"permissions\": "
+"\"edit\" }"
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.set_permiss:53 of
+msgid "]"
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.set_permiss:55 of
+msgid "}"
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.update_layer:1 of
+msgid ""
+"The update_layer method is an operator responsible for executing the "
+"update of layers. The method uses an SSH connection to execute a Docker "
+"command within GeoNode's container."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.update_layer:4 of
+msgid ""
+"The dataset name (not title) that must be updated. Is possible to pass a "
+"list of datasets names to execute this method recursively."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.update_layer of
+msgid "Raises"
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.update_layer:6 of
+msgid "Raised if an error occurs during the layer update process."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.update_layer_style:1 of
+msgid ""
+"This method is employed to update the styles of a layer by utilizing an "
+"GeoServer API 'PUT' request."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.update_layer_style:3 of
+msgid "The layer/dataset name (not title) which want to apply the style."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.update_layer_style:4 of
+msgid "The style name (already uploaded) wich want to apply to the layer/dataset."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.update_style:1 of
+msgid "Allows to update an existing style in '.sld' format."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.update_style:3
+#: geonode_provider.hooks.geonode.GeoNodeHook.upload_style:3 of
+msgid "Path to \".sld\" style file."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.update_style:4
+#: geonode_provider.hooks.geonode.GeoNodeHook.upload_style:4 of
+msgid ""
+"Optional. Name that the style will have in GeoServer. If isn't defined it"
+" will take the name of \".sld\" file."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.upload_dataset:1 of
+msgid ""
+"This method upload a dataset by GeoNode v2 API. Datasets can be in the "
+"following formats: - .zip - .shx, .prj, .shp and .dbf - .tif"
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.upload_dataset:7 of
+msgid ""
+"The dataset path that must be uploaded. The path can be a "
+"directory/folder or a single file."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.upload_dataset
+#: geonode_provider.hooks.geonode.GeoNodeHook.upload_document
+#: geonode_provider.hooks.geonode.GeoNodeHook.upload_map of
+msgid "Returns"
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.upload_dataset:9 of
+msgid ""
+"For vector .zip datasets, a dictionary (json) is returned with the ID of "
+"the dataset. For individual vector or rasters datasets, the run/execution"
+" ID is returned."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.upload_document:1 of
+msgid "This method uploads a document to GeoNode via API v2."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.upload_document:3 of
+msgid "Path to document that want to be uploaded."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.upload_document:5 of
+msgid "This method returns the document ID that just uploaded."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.upload_map:1 of
+msgid ""
+"The upload_map method is responsible for creating a map in GeoNode via "
+"API v2. You must to choice datasets with the same projection and put them"
+" into a list. First put uppers datasets and then lowers (o base) "
+"datasets."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.upload_map:4 of
+msgid ""
+"List of datasets ids that should make up the map. Sorted from the "
+"outermost/upper layer to the lower ones."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.upload_map:5 of
+msgid "The title to be placed on the map."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.upload_map:7 of
+msgid "This method returns a map ID just created."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.upload_metadata:1 of
+msgid ""
+"The upload_metadata method is designed to update metadata for any "
+"resource type on GeoNode by API v2 Metadata allowed:"
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.upload_metadata:4 of
+msgid "Title"
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.upload_metadata:5 of
+msgid "Supplemental information"
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.upload_metadata:7 of
+msgid ""
+"Type of resource wich want to be updated his metadata. Resource type "
+"allowed:  - dataset - documents - maps"
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.upload_metadata:7 of
+msgid ""
+"Type of resource wich want to be updated his metadata. Resource type "
+"allowed:"
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.upload_metadata:10 of
+msgid "dataset"
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.upload_metadata:11 of
+msgid "documents"
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.upload_metadata:12 of
+msgid "maps"
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.upload_metadata:14 of
+msgid "ID of the resource whose metadata want to update."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.upload_metadata:15 of
+msgid "The title to be placed on the resource."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.upload_metadata:16 of
+msgid "The supplemental information to be placed on the resource."
+msgstr ""
+
+#: geonode_provider.hooks.geonode.GeoNodeHook.upload_style:1 of
+msgid "Allows to upload a style in '.sld' format."
+msgstr ""
+
+#: ../../geonode_provider.hooks.rst:16
+msgid "Module contents"
+msgstr ""
+
