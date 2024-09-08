@@ -22,6 +22,7 @@ release = '0.1'
 extensions = [
 	'sphinx.ext.autodoc',
 	'sphinx.ext.todo',
+	'sphinx.ext.autosummary',
 	'sphinxcontrib.openapi',
 	'sphinx.ext.coverage',
 	'sphinx.ext.doctest',
